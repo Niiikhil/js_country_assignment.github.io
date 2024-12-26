@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .country-header {
+            /* text-align: start; */
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .details {
+            display: flex;
+            gap: 20px;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        
+        .flag img {
+            max-width: 100%;
+            height: auto;
+        }
+        .info {
+            /* flex: 2; */
+            display: flex;
+            flex-direction: column;
+        }
+        .neighbours {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .neighbour-flags img {
+            width: 150px; /* Adjust width as needed */
+            height: 100px; /* Adjust height as needed */
+            margin: 10px; /* Add some space between flags */
+            border: 1px solid #ddd; /* Optional: add a border around the flags */
+            border-radius: 5px; /* Optional: add rounded corners */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: add shadow for a polished look */
+        }
+
+       
+      
+      
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="country-header" id="countryName">Country Name</div>
+        <div class="details">
+            <div class="flag" id="countryFlag"></div>
+            <div class="info" id="countryInfo"></div>
+        </div>
+        <div class="neighbours">
+            <h4>Neighbouring Countries</h4>
+            <div class="neighbour-flags" id="neighbourFlags"></div>
+        </div>
+    </div>
+    <script src="details.js"></script>
+</body>
+</html>

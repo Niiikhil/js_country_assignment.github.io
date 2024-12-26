@@ -1,0 +1,90 @@
+/* Centering the entire page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    margin: 0;              /* Remove default margin */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+
+
+.searchbox {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.searchbox .input-container {
+    position: relative;
+    width: 50%;
+    max-width: 500px; 
+}
+
+
+.searchbox input {
+    width: 100%; 
+    padding: 10px 50px 10px 15px; 
+    border: 2px solid #ccc;
+
+ 
+}
+
+
+.searchbox .fas {
+    position: absolute;
+    top: 50%;
+    right: 15px; 
+    transform: translateY(-50%);
+    font-size: 24px; 
+    color: #888;
+    cursor: pointer; 
+}
+
+
+#c-name{
+    font-size: 1.5rem;
+}
+
+#currency{
+    font-size: 0.9rem;
+}
+#c-date{
+    font-size: 0.9rem;
+}
+
+.dynamic-countries {
+    border: 2px solid #ccc;
+    width: 31rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* padding: 10px 0; Padding: 20px for top and bottom, 0 for left and right */
+}
+
+.buttons button {
+    font-size: 14px; /* Increase font size */
+    font-weight: 800;
+    padding: 12px 20px; /* Increase padding for a bigger button */
+    margin: 5px; /* Space between buttons */
+    border: 2px solid #0501ff;
+    background-color: white; /* Optional: button background color */
+    color: #0501ff; /* Optional: text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.buttons button:hover {
+    background-color: #0501ff; /* Optional: change background color on hover */
+    color: white;
+}
+
+
+
